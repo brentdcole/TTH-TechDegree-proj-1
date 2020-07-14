@@ -23,7 +23,7 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
+.profile-nav {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -88,7 +88,7 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
-.background_goals-containers {
+.background_goals-container {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -98,13 +98,14 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
-.background_goals-containers:hover {
+.background_goals-container:hover {
   border-color: #38bb05;
 }
 
-ul.skills {
+ul.skills, ul.hobbies {
   padding: 0;
   text-align: center;
+  list-style-type: none;
 }
 
 .skills li {
@@ -151,12 +152,12 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-/* a.twitter {
+a.twitter {
   background-image: url(images/twitter.svg);
-} */
-/* a.linkedin {
+} 
+a.linkedin {
   background-image: url(images/linkedin.svg);
-} */
+}
 a.github {
   background-image: url(images/github.svg);
 }
@@ -165,6 +166,24 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
+}
+
+.center-hobbies{
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  display: inline-block;
+  margin: 30px;
+  padding: 20px 40px 40px;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  width: 50%;
+}
+
+.center-hobbies:hover {
+  border-color: #38bb05;
 }
 
 /* Styles for larger screens */
@@ -179,6 +198,15 @@ a.social:hover {
       margin: 0 auto;
   }
 
+  .center-hobbies {
+    display: -ms-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0;
+    max-width: 50%;
+  }
+
   header {
     min-height: 470px;
   }
@@ -189,11 +217,11 @@ a.social:hover {
   }
 
 
-  main {
+  main .center-hobbies {
     padding-top: 20px;
   }
 
-  main p {
+  main p .center-hobbies {
     line-height: 1.6em;
   }
 
