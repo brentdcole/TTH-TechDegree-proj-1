@@ -70,16 +70,14 @@ header {
   overflow: hidden;
   padding: 60px;
   border: solid;
-  text-indent: -9999px;
 }
 .interests-header{
   text-align: center;
-  background: url('images/emmanuel-appiah-wYZheEZ1fPc-unsplash.jpg')no-repeat top center;
+  background: url('./images/rsz_olga-delawrence-thk-319z9aw-unsplash.jpg')no-repeat 100% center;
   background-size: cover;
   overflow: hidden;
   padding: 60px;
   border: solid;
-  text-indent: -9999px;
 }
 header {
   line-height: 1.5;
@@ -102,6 +100,15 @@ header .profile-image:hover {
   border-radius: 30px;
   display: table;
   margin: 10px auto;
+}
+/*hide this from headers*/
+.interests-header .tag,
+.resume-header .tag {
+  visibility: hidden;
+}
+.resume-header .profile-image,
+.interests-header .profile-image {
+  visibility: hidden;
 }
 .location {
   background-color: #222;
@@ -208,7 +215,7 @@ a.social:hover {
       margin: 0 auto;
   }
 
-  header, .resume-header {
+  header {
     min-height: 470px;
   }
 
