@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #e0dfda;
 }
 /* Link Styles */
 
@@ -61,6 +61,25 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  border: solid ;
+}
+.resume-header {
+  text-align: center;
+  background: url('images/rsz_fineas-anton-widwbuxlfwa-unsplash.jpg')no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  padding: 60px;
+  border: solid;
+  text-indent: -9999px;
+}
+.interests-header{
+  text-align: center;
+  background: url('images/emmanuel-appiah-wYZheEZ1fPc-unsplash.jpg')no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  padding: 60px;
+  border: solid;
+  text-indent: -9999px;
 }
 header {
   line-height: 1.5;
@@ -102,7 +121,7 @@ header .profile-image:hover {
   border-color: #38bb05;
 }
 
-ul.skills, ul.hobbies {
+ul.skills {
   padding: 0;
   text-align: center;
   list-style-type: none;
@@ -119,6 +138,20 @@ ul.skills, ul.hobbies {
 
 .skills li:nth-child(odd) {
   background: #0399ff;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1em;
+  border-radius: 6px;
+  margin: 60px;
+}
+
+.interests-grid > div {
+  background: #eee;
+  padding: 1em;
+  text-align: left;
 }
 
 footer {
@@ -163,24 +196,6 @@ a.social:hover {
   clear: both;
 }
 
-.center-hobbies{
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  display: inline-block;
-  margin: 30px;
-  padding: 20px 40px 40px;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
-  width: 50%;
-}
-
-.center-hobbies:hover {
-  border-color: #38bb05;
-}
-
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -193,16 +208,7 @@ a.social:hover {
       margin: 0 auto;
   }
 
-  .center-hobbies {
-    display: -ms-flexbox;
-    display: inline-flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 0;
-    max-width: 50%;
-  }
-
-  header, .chi-header {
+  header, .resume-header {
     min-height: 470px;
   }
 
@@ -212,11 +218,11 @@ a.social:hover {
   }
 
 
-  main .center-hobbies {
+  main {
     padding-top: 20px;
   }
 
-  main p .center-hobbies {
+  main p {
     line-height: 1.6em;
   }
 
