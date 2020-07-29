@@ -147,9 +147,10 @@ ul.skills {
   background: #0399ff;
 }
 
+/*tips from @TraversyMedia css grid layout*/
 .interests-grid {
   display: grid;
-  grid-template-columns: 50% 50%;
+  justify-content: center;
   grid-gap: 1em;
   border-radius: 6px;
   margin: 60px;
@@ -159,6 +160,16 @@ ul.skills {
   background: #eee;
   padding: 1em;
   text-align: left;
+}
+
+.img-container {
+  display: grid;
+  justify-content: center;
+}
+
+img.interest-img {
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -206,7 +217,7 @@ a.social:hover {
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
-  .flex {
+  .flex, .interest-grid {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
       max-width: 1200px;
@@ -231,6 +242,15 @@ a.social:hover {
 
   main p {
     line-height: 1.6em;
+  }
+
+  .interests-grid {
+    grid-template-columns: 30% 30%;
+  }
+
+  .interest-img {
+    min-width: 50%;
+    min-height: auto;
   }
 
   footer {
