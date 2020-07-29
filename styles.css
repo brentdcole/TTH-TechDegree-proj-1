@@ -172,6 +172,16 @@ img.interest-img {
   height: auto;
 }
 
+.interest-border {
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.interest-border:hover {
+  border-color: #38bb05;
+}
+
 footer {
   width: 100%;
   min-height: 30px;
