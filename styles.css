@@ -176,6 +176,7 @@ img.interest-img {
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+  margin: 10px;
 }
 
 .interest-border:hover {
